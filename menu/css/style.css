@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+a {
+    color: green;
+}
+
+.menu {   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:lightgreen;   
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    overflow:hidden;
+}
+
+.header{
+    background-color:white;
+    box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
+    position:fixed;
+    width:100%;
+    z-index:3;
+}
+
+.header ul a{
+    display:block;
+    padding:6px;
+    margin: 0.2em;
+    text-decoration:none;
+    text-transform: lowercase;
+}
+
+.header ul a:hover{
+   background-color:seagreen; 
+   color:lightgreen;
+}
+
+.logo {
+    padding: 10px 2px;
+    margin: 1px;  
+}
+
+.meer {
+    display:none;
+    position: absolute;
+    padding: 2px 9px;
+    margin: 3px;
+    right: 10px;
+    top: 23px;
+    background-color:seagreen;
+    color:antiquewhite;
+    text-transform: lowercase;
+    cursor:pointer;
+}
+
+.banner {
+    width: 100%;
+    
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url(../images/reisfoto.jpg);
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 70px 200px 8px 2px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input{
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: seagreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+margin: 10px 0px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    color:darkgreen;
+}
+
+h2 {
+    padding: 2px 4px;
+    margin: 2px 5.2em;
+    color:darkgreen;
+}
+table, th, td {
+    border-collapse:collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 0.1px solid seagreen;
+  padding: 20px;
+}
+
+.begin {
+  background-color: seagreen;
+  color: white;
+}
+
+table {
+    margin: auto;
+    width: auto;
+}
+
+@media (max-width: 578px) {
+    .meer {
+        right:10px;
+        top: 19px;
+        display:block;
+    }
+    .header ul {
+        width: 100%;
+        top 0;
+
+    }
+    .header ul li a {
+        margin: 0;
+    }
+    
+    .eerste {
+        margin-left:15em;
+        display:block;
+    }
+    
+    .bo, .ol, .lo {
+        display:none;
+    }
+    .menu {
+        flex-direction:column;
+        justify-content: center;
+        text-align:center;
+        
+    }
+
+}
+
