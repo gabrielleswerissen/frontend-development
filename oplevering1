@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reisbureau</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="/" class="logo">Transavia</a>
+        <a class="meer">Meer</a>
+        <ul class="menu">
+
+            <li class="eerste"><a href="#Boek je vlucht!">Boek je vlucht!</a></li>
+
+            <li class="bo"><a href="#Mijn reis">Mijn reis</a></li>
+
+            <li class="ol"><a href="#Bestemmingen">Bestemmingen</a></li>
+
+            <li class="lo"><a href="#Reisinspiratie">Reisinspiratie</a></li>
+
+        </ul>
+
+    </header>
+
+
+    <div class="bg-img">
+        <form class="container">
+            <h1>Zoek vlucht</h1>
+
+            <label for="text"><b>Van</b></label>
+            <input type="text" placeholder="Amsterdam, Schiphol airport" name="Van" required>
+
+            <label for="text"><b>Naar</b></label>
+            <input type="text" placeholder="Uw bestemming" name="Naar" required>
+
+            <label for="date"><b>Heenreis</b></label>
+            <input type="date" placeholder="Tussen nu en november 2020" name="Datum" required>
+
+            <label for="text"><b>Passagiers</b></label>
+            <input type="text" placeholder="1 volwassen" name="Passagiers" required>
+
+            <label for="text"><b>Reisklasse</b></label>
+            <select name="class">
+                <option value="Economy">Economy Class</option>
+                <option value="Business">Business Class</option>
+            </select>
+
+            <button type="submit" class="btn">Bekijk vluchten</button>
+        </form>
+    </div>
+
+    <div class="aanbiedingen">
+        <h2>Aanbiedingen</h2>
+        <table>
+            <tr>
+                <th class="begin" width="150">Top 10</th>
+            </tr>
+            <tr>
+                <th>Barcelona</th>
+                <td>99.00</td>
+                <th>Zweden</th>
+                <td>160.50</td>
+
+            </tr>
+            <tr>
+                <th>London</th>
+                <td>89.99</td>
+                <th>Wenen</th>
+                <td>109.00</td>
+            </tr>
+            <tr>
+                <th>Bangkok</th>
+                <td>103.99</td>
+                <th>Los Angeles</th>
+                <td>677.90</td>
+            </tr>
+            <tr>
+                <th>Curacao</th>
+                <td>429.00</td>
+                <th>New York</th>
+                <td>599.00</td>
+            </tr>
+        </table>
+    </div>
+    <h2>Recommandaties</h2>
+    <div class="articles">
+        <article>
+            <!-- <img src="images/ibiza.jpg" alt="ibiza" class="post-img"> -->
+            <h3>Ibiza, de meest geweldigste trip ooit!</h3>
+            <i class="">Shia Bourne</i>
+            <i>Mar 11, 2019</i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quas eum, quod ad commodi maiores?</p>
+            <a href="single.html" class="btn">Read More</a>
+        </article>
+        <article>
+            <!-- <img src="images/ibiza.jpg" alt="ibiza" class="post-img"> -->
+            <h3>Ibiza, de meest geweldigste trip ooit!</h3>
+            <i class="">Shia Bourne</i>
+            <i>Mar 11, 2019</i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quas eum, quod ad commodi maiores?</p>
+            <a href="single.html" class="btn">Read More</a>
+        </article>
+        <article>
+            <!-- <img src="images/ibiza.jpg" alt="ibiza" class="post-img"> -->
+            <h3>Ibiza, de meest geweldigste trip ooit!</h3>
+            <i class="">Shia Bourne</i>
+            <i>Mar 11, 2019</i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quas eum, quod ad commodi maiores?</p>
+            <a href="single.html" class="btn">Read More</a>
+        </article>
+    </div>
+</body>
+<footer>
+   <div class="content">
+    <div class="links">
+        <h3>Quick links</h3>
+        <ul>
+            <a href="#">
+                <li>boek je vlucht</li>
+            </a>
+            <a href="#">
+                <li>reisinspiratie</li>
+            </a>
+            <a href="#">
+                <li>mijn reis</li>
+            </a>
+            <a href="#">
+                <li>bestemmingen</li>
+            </a>
+        </ul>
+    </div>
+    <div class="contacts">
+        <h3>Contact</h3>
+        <form action="index.html" class="footerform">
+            <input type="email" name="email" class="contact-input" placeholder="Je email adres">
+            <textarea name="message" class="text" placeholder="Je bericht"></textarea>
+            <button type="submit" class="btn-stuur">Stuur</button>
+        </form>
+    </div>
+    </div>
+    <div class="footer-bottom">
+        &copy;Designed by Gabrielle Swerissen
+    </div>
+</footer>
+
+</html>
+
+/* style */
+
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgreen;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul a {
+    display: block;
+    padding: 6px;
+    margin: 0.2em;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.header ul a:hover {
+    background-color: seagreen;
+    color: lightgreen;
+}
+
+.logo {
+    padding: 10px 2px;
+    margin: 1px;
+}
+
+.meer {
+    display: none;
+    position: absolute;
+    padding: 2px 9px;
+    margin: 3px;
+    right: 10px;
+    top: 23px;
+    background-color: seagreen;
+    color: antiquewhite;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url(../images/reisfoto.jpg);
+
+    min-height: 600px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: absolute;
+    right: 0;
+    margin: 70px 200px 8px 2px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: seagreen;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 20px 50px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn-stuur {
+    background-color: seagreen;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 20px 50px;
+}
+
+h1 {
+    text-align: center;
+    color: darkgreen;
+}
+
+h2 {
+    padding: 20px 4px;
+    margin: 2px 5.2em;
+    color: darkgreen;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 0.1px solid seagreen;
+    padding: 20px;
+}
+
+.begin {
+    background-color: seagreen;
+    color: white;
+}
+
+table {
+    margin: auto;
+    width: auto;
+}
+
+
+
+article {
+    background-color: lightyellow;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+}
+
+article .btn {
+
+    float: right;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 10px 10px;
+    padding: 10px 15px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+/*  FOOTER */
+
+footer {
+
+    background-color: lightgreen;
+    height: 400px;
+    color: green;
+    position: relative;
+}
+
+footer .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
+}
+
+footer .footer-bottom {
+    color: black;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+.btn-stuur {
+    float: center;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 10px 270px;
+    padding: 10px 15px;
+}
+
+.footerform {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input,
+.text {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 170px;
+}
+
+.links {
+    margin: 0px 230px;
+}
+
+.links a {
+    margin: 10px 20px;
+}
+
+@media (max-width: 578px) {
+    .meer {
+        right: 10px;
+        top: 19px;
+        display: none;
+    }
+
+    .header ul {
+        width: 100%;
+        top 0;
+
+    }
+
+    .header ul li a {
+        margin: 0;
+    }
+
+    .bo,
+    .ol,
+    .lo {
+        display: ;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bg-img {
+        /* The image used */
+        background-image: url(../images/reisfoto.jpg);
+
+        min-height: 600px;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .container {
+        position: absolute;
+        right: 0;
+        margin: 10px 110px;
+        max-width: 300px;
+        padding: 16px;
+        background-color: white;
+    }
+
+    .aanbiedingen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+        margin: 20px;
+    }
+
+    h3:hover {
+        color: seagreen;
+    }
+
+
+    article {
+        background-color: lightyellow;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    }
+
+    article .btn {
+
+        float: right;
+        background-color: seagreen;
+        color: white;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+        margin: 10px 10px;
+        padding: 10px 15px;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1em;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: lightgreen;
+        height: 500px;
+        color: green;
+        position: relative;
+    }
+
+    footer .footer-bottom {
+        color: black;
+        height: 0.01px;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .btn-stuur {
+        float: center;
+        background-color: seagreen;
+        color: white;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+        margin: 10px 180px;
+        padding: 10px 15px;
+    }
+
+    .footerform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-input,
+    .text {
+        width: 300px;
+        padding: 16px;
+        margin: 5px 80px;
+    }
+
+    footer .content {
+        display: block;
+    }
+
+    .links {
+        margin: 10px 150px;
+    }
+}
+
